@@ -1,0 +1,11 @@
+background-opacity = 0.85
+background-blur-radius = 20
+macos-titlebar-style = transparent
+
+theme = Kanso Ink
+
+cursor-style = block
+shell-integration-features = no-cursor
+
+keybind = alt+backspace=text:\x17
+

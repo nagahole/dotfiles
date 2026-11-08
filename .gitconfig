@@ -1,0 +1,27 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Rick Wang
+	email = rickwang121@gmail.com
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+[push]
+	default = simple
+[http]
+	postBuffer = 157286400
+[core]
+	compression = 0
+	packedGitLimit = 512m 
+	packedGitWindowSize = 512m 
+	autocrlf = input
+[pack] 
+	deltaCacheSize = 2047m 
+	packSizeLimit = 2047m 
+	windowMemory = 2047m
+[init]
+	defaultBranch = main
