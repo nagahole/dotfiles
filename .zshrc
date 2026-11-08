@@ -19,7 +19,6 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 # Helpers
-eval "$(zoxide init zsh)"
 eval "$(pyenv init - zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -55,3 +54,6 @@ export PATH="$HOME/.local/bin:$PATH"
 [[ ! -r '/Users/rickwang/.opam/opam-init/init.zsh' ]] || source '/Users/rickwang/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
 export PATH="/opt/homebrew/opt/arm-none-eabi-binutils/bin:$PATH"
+
+# zoxide must be initialized last
+eval "$(zoxide init zsh)"
