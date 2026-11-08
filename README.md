@@ -1,5 +1,7 @@
 # dotfiles
 
+![screenshot](screenshot.png)
+
 macOS setup: Neovim, Ghostty, tmux, zsh + Powerlevel10k, AeroSpace, fastfetch.
 
 ```sh
